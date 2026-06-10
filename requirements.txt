@@ -1,0 +1,37 @@
+# requirements.txt — pinned for stability
+# Install PyTorch FIRST with:
+#   pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 \
+#       --index-url https://download.pytorch.org/whl/cu128
+# Then install this file:
+#   pip install -r requirements.txt
+
+# Image/data
+timm==1.0.11
+albumentations==2.0.6
+opencv-python-headless==4.10.0.84
+Pillow==10.4.0
+
+# Tabular/ML
+scikit-learn==1.5.2
+pandas==2.2.3
+numpy==1.26.4
+
+# Explainability
+captum==0.7.0
+grad-cam==1.5.4
+
+# Metrics
+torchmetrics==1.4.3
+
+# Visualization
+matplotlib==3.9.2
+seaborn==0.13.2
+plotly==5.24.1
+
+# Utilities
+tqdm==4.66.5
+PyYAML==6.0.2
+tensorboard==2.18.0
+mlflow==2.16.2
+kaggle
+scipy
