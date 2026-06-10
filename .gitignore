@@ -1,0 +1,28 @@
+__pycache__/
+*.py[cod]
+*.pth
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Data (large files — download via script)
+data/isic2019/
+
+# Outputs (generated at runtime)
+outputs/models/
+outputs/figures/
+outputs/tables/
+
+# Env
+.env
+*.log
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# MLflow / TensorBoard
+mlruns/
+runs/
