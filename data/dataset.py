@@ -23,7 +23,7 @@ IMAGENET_STD = [0.229, 0.224, 0.225]
 
 def get_train_transforms(image_size: int) -> A.Compose:
     return A.Compose([
-        A.RandomResizedCrop(height=image_size, width=image_size, scale=(0.8, 1.0)),
+        A.RandomResizedCrop(size=(image_size, image_size), scale=(0.8, 1.0)),
         A.HorizontalFlip(p=0.5),
         A.VerticalFlip(p=0.5),
         A.Rotate(limit=30, p=0.5),

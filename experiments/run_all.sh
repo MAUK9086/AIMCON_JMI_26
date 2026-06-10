@@ -7,23 +7,33 @@ set -e  # Exit on any error
 
 CONFIG="config/config.yaml"
 
+# Detect python binary (conda envs on Windows may only have 'python', not 'python3')
+if command -v python &> /dev/null; then
+    PYTHON=python
+elif command -v python3 &> /dev/null; then
+    PYTHON=python3
+else
+    echo "ERROR: python not found. Activate your conda environment first."
+    exit 1
+fi
+
 echo "============================================"
 echo "AIMCON_JMI_26 — Full Experiment Pipeline"
 echo "============================================"
 
 # Verify GPU
-python -c "import torch; assert torch.cuda.is_available(), 'CUDA not available — ensure PyTorch 2.7.0+cu128 is installed'; print(f'GPU: {torch.cuda.get_device_name(0)}')"
+$PYTHON -c "import torch; assert torch.cuda.is_available(), 'CUDA not available — ensure PyTorch 2.7.0+cu128 is installed'; print(f'GPU: {torch.cuda.get_device_name(0)}')"
 
 # Run in logical order
-python experiments/exp09_correlation.py --config $CONFIG
-python experiments/exp01_baseline.py --config $CONFIG
-python experiments/exp02_occlusion.py --config $CONFIG
-python experiments/exp03_gradients.py --config $CONFIG
-python experiments/exp04_subgroup.py --config $CONFIG
-python experiments/exp05_metadata_dropout.py --config $CONFIG
-python experiments/exp06_class_reweighting.py --config $CONFIG
-python experiments/exp07_age_stratified.py --config $CONFIG
-python experiments/exp08_site_stratified.py --config $CONFIG
+$PYTHON experiments/exp09_correlation.py --config $CONFIG
+$PYTHON experiments/exp01_baseline.py --config $CONFIG
+$PYTHON experiments/exp02_occlusion.py --config $CONFIG
+$PYTHON experiments/exp03_gradients.py --config $CONFIG
+$PYTHON experiments/exp04_subgroup.py --config $CONFIG
+$PYTHON experiments/exp05_metadata_dropout.py --config $CONFIG
+$PYTHON experiments/exp06_class_reweighting.py --config $CONFIG
+$PYTHON experiments/exp07_age_stratified.py --config $CONFIG
+$PYTHON experiments/exp08_site_stratified.py --config $CONFIG
 
 echo "============================================"
 echo "All experiments complete."
