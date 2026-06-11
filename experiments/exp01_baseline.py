@@ -55,8 +55,12 @@ def main(cfg: dict) -> None:
     for d in [tables_dir, figures_dir, models_dir]:
         d.mkdir(parents=True, exist_ok=True)
 
-    # Train all 3 models
+    # Train all 3 models (skip if checkpoint already exists)
     for model_name in ["image_only", "metadata_only", "fusion"]:
+        ckpt = Path(cfg["paths"]["models_dir"]) / f"{model_name}_best.pth"
+        if ckpt.exists():
+            print(f"\n  [SKIP] {model_name} checkpoint already exists: {ckpt}")
+            continue
         print(f"\n{'='*50}")
         print(f"  Training: {model_name}")
         print(f"{'='*50}")
