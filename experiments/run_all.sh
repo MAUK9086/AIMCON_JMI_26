@@ -34,6 +34,7 @@ $PYTHON experiments/exp05_metadata_dropout.py --config $CONFIG
 $PYTHON experiments/exp06_class_reweighting.py --config $CONFIG
 $PYTHON experiments/exp07_age_stratified.py --config $CONFIG
 $PYTHON experiments/exp08_site_stratified.py --config $CONFIG
+$PYTHON experiments/exp10_bootstrap_ci.py --config $CONFIG
 
 echo "============================================"
 echo "All experiments complete."
