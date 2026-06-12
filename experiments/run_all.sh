@@ -35,6 +35,10 @@ $PYTHON experiments/exp06_class_reweighting.py --config $CONFIG
 $PYTHON experiments/exp07_age_stratified.py --config $CONFIG
 $PYTHON experiments/exp08_site_stratified.py --config $CONFIG
 $PYTHON experiments/exp10_bootstrap_ci.py --config $CONFIG
+$PYTHON experiments/exp11_modality_reliance.py --config $CONFIG
+$PYTHON experiments/exp12_occlusion_confusion.py --config $CONFIG
+$PYTHON experiments/exp13_metadata_collapse.py --config $CONFIG
+$PYTHON experiments/exp14_power_analysis.py --config $CONFIG
 
 echo "============================================"
 echo "All experiments complete."
