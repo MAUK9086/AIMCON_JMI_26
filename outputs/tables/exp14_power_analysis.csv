@@ -1,0 +1,4 @@
+class,n_indian_pos,n_western_pos,indian_fnr,western_fnr,cohens_h,achieved_power,n_required_for_80pct_power,note
+MEL,96,156,0.3249,0.2326,0.2065,0.3564,298.0,
+BCC,11,107,0.2639,0.1106,0.401,0.244,54.0,
+SCC,4,17,0.0,0.4116,,,,"excluded — N too small (indian=4, western=17)"

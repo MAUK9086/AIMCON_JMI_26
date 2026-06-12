@@ -1,0 +1,5 @@
+true_class,predicted_class,count,support,collapse_rate
+BKL,AK,150,393,0.3817
+SCC,AK,31,94,0.3298
+BCC,AK,164,499,0.3287
+NV,DF,594,1932,0.3075

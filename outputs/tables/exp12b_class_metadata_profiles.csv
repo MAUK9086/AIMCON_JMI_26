@@ -1,0 +1,9 @@
+class,n,mean_age,median_age,modal_site,modal_site_pct,modal_sex,modal_sex_pct
+MEL,679,60.3,60.0,anterior torso,0.325,male,0.551
+NV,1932,44.7,45.0,anterior torso,0.29,female,0.503
+BCC,499,66.3,70.0,head/neck,0.331,male,0.603
+AK,130,66.1,65.0,head/neck,0.7,male,0.577
+BKL,393,64.3,65.0,head/neck,0.382,male,0.59
+DF,36,49.4,50.0,lower extremity,0.5,male,0.528
+VASC,38,54.2,55.0,anterior torso,0.342,female,0.605
+SCC,94,69.4,70.0,head/neck,0.33,male,0.606
