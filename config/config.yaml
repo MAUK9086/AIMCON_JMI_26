@@ -5,7 +5,7 @@ project:
 
 paths:
   data_root: "data/isic2019"
-  images_dir: "data/isic2019/ISIC_2019_Training_Input"
+  images_dir: "data/isic2019/ISIC_2019_Training_Input/ISIC_2019_Training_Input"
   metadata_csv: "data/isic2019/ISIC_2019_Training_Metadata.csv"
   ground_truth_csv: "data/isic2019/ISIC_2019_Training_GroundTruth.csv"
   outputs_dir: "outputs"
