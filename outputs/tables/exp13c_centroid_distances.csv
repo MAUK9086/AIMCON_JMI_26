@@ -1,0 +1,5 @@
+,true_SCC,true_NV,predicted_as_AK,predicted_as_DF
+true_SCC,0.0,0.4629,0.7653,0.7404
+true_NV,0.4629,0.0,1.0656,0.6342
+predicted_as_AK,0.7653,1.0656,0.0,1.2904
+predicted_as_DF,0.7404,0.6342,1.2904,0.0

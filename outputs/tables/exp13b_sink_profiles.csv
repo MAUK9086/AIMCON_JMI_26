@@ -1,0 +1,6 @@
+group,n,mean_age,median_age,modal_site,modal_site_pct,modal_sex,modal_sex_pct
+predicted_as_AK,667,62.2,65.0,head/neck,1.0,male,0.582
+predicted_as_DF,916,45.8,45.0,lower extremity,0.678,female,0.611
+true_AK,130,66.1,65.0,head/neck,0.7,male,0.577
+true_DF,36,49.4,50.0,lower extremity,0.5,male,0.528
+overall_test_set,3801,53.8,55.0,anterior torso,0.279,male,0.526

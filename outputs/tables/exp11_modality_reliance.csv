@@ -1,0 +1,9 @@
+class,support,sensitivity_none,sensitivity_img_occ,sensitivity_meta_occ,reliance_image,reliance_metadata,p_image,p_metadata,image_significant,metadata_significant
+MEL,679,0.7202,0.0,0.6863,1.0,0.047,0.0,0.1719,True,False
+NV,1932,0.8737,0.0989,0.9027,0.8868,0.0,0.0,0.0043,True,True
+BCC,499,0.8697,0.0,0.8758,1.0,0.0,0.0,0.7757,True,False
+AK,130,0.7769,0.3154,0.7538,0.5941,0.0297,0.0,0.6606,True,False
+BKL,393,0.7099,0.0,0.6845,1.0,0.0358,0.0,0.4376,True,False
+DF,36,0.8611,0.0,0.8333,1.0,0.0323,0.0,0.7432,True,False
+VASC,38,0.9211,0.0,0.9211,1.0,0.0,0.0,1.0,True,False
+SCC,94,0.6277,0.8936,0.617,0.0,0.0169,0.0,0.8804,True,False
