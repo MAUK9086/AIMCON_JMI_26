@@ -39,6 +39,10 @@ $PYTHON experiments/exp11_modality_reliance.py --config $CONFIG
 $PYTHON experiments/exp12_occlusion_confusion.py --config $CONFIG
 $PYTHON experiments/exp13_metadata_collapse.py --config $CONFIG
 $PYTHON experiments/exp14_power_analysis.py --config $CONFIG
+$PYTHON experiments/exp12b_scc_profile.py --config $CONFIG
+$PYTHON experiments/exp12c_fallback_comparison.py --config $CONFIG
+$PYTHON experiments/exp13b_sink_analysis.py --config $CONFIG
+$PYTHON experiments/exp13c_metadata_space.py --config $CONFIG
 
 echo "============================================"
 echo "All experiments complete."
