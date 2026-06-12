@@ -26,28 +26,21 @@ def main(cfg: dict) -> None:
     src = tables_dir / "exp02_occlusion_results.csv"
     df = pd.read_csv(src)
 
-    # Keep only fusion model rows (condition column distinguishes occlusion)
-    # exp02 CSV has columns: group, class, sensitivity, specificity, fnr, ppv, f1, auc, support, condition
-    # condition values: 'none', 'occlude_image', 'occlude_metadata'
-    # group values: 'image_only', 'metadata_only', 'fusion' (label from compute_full_metrics)
-    fusion = df[df["group"] == "fusion"].copy()
-
+    # exp02 CSV: group = condition label (occlude_none / occlude_image / occlude_metadata)
+    # class column holds the diagnostic class name
     rows = []
     for cls in CLASS_NAMES:
-        cls_rows = fusion[fusion["class"] == cls]
-        if cls_rows.empty:
-            continue
 
-        def get_val(cond, col):
-            r = cls_rows[cls_rows["condition"] == cond]
+        def get_val(grp, col, _cls=cls):
+            r = df[(df["group"] == grp) & (df["class"] == _cls)]
             if r.empty:
                 return np.nan
             return r.iloc[0][col]
 
-        sens_none = get_val("none", "sensitivity")
+        sens_none = get_val("occlude_none", "sensitivity")
         sens_img = get_val("occlude_image", "sensitivity")
         sens_meta = get_val("occlude_metadata", "sensitivity")
-        support = get_val("none", "support")
+        support = get_val("occlude_none", "support")
 
         if any(np.isnan(v) for v in [sens_none, sens_img, sens_meta, support]):
             continue
