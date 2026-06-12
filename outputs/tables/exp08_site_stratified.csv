@@ -1,0 +1,73 @@
+model,site,class,n_total,n_class,sensitivity,low_n_flag
+image_only,anterior torso,MEL,1060,221,0.7511312217160583,False
+image_only,anterior torso,BCC,1060,159,0.8805031446485504,False
+image_only,anterior torso,SCC,1060,21,0.6190476190181405,False
+image_only,head/neck,MEL,675,121,0.6446280991682262,False
+image_only,head/neck,BCC,675,165,0.8727272727219836,False
+image_only,head/neck,SCC,675,31,0.5161290322414152,False
+image_only,lateral torso,MEL,7,2,0.9999999995,True
+image_only,lateral torso,BCC,7,0,,True
+image_only,lateral torso,SCC,7,0,,True
+image_only,lower extremity,MEL,722,112,0.7857142857072704,False
+image_only,lower extremity,BCC,722,77,0.8701298701185697,False
+image_only,lower extremity,SCC,722,22,0.6818181817871901,False
+image_only,oral/genital,MEL,9,2,0.9999999995,True
+image_only,oral/genital,BCC,9,0,,True
+image_only,oral/genital,SCC,9,0,,True
+image_only,palms/soles,MEL,58,30,0.8666666666377778,False
+image_only,palms/soles,BCC,58,0,,True
+image_only,palms/soles,SCC,58,1,0.9999999989999999,True
+image_only,posterior torso,MEL,437,66,0.7878787878668503,False
+image_only,posterior torso,BCC,437,27,0.8518518518203018,False
+image_only,posterior torso,SCC,437,4,0.2499999999375,True
+image_only,upper extremity,MEL,470,105,0.7619047618975057,False
+image_only,upper extremity,BCC,470,61,0.9016393442475141,False
+image_only,upper extremity,SCC,470,14,0.571428571387755,False
+metadata_only,anterior torso,MEL,1060,221,0.0678733031671137,False
+metadata_only,anterior torso,BCC,1060,159,0.7044025157188403,False
+metadata_only,anterior torso,SCC,1060,21,0.0,False
+metadata_only,head/neck,MEL,675,121,0.0,False
+metadata_only,head/neck,BCC,675,165,0.0,False
+metadata_only,head/neck,SCC,675,31,0.0,False
+metadata_only,lateral torso,MEL,7,2,0.0,True
+metadata_only,lateral torso,BCC,7,0,,True
+metadata_only,lateral torso,SCC,7,0,,True
+metadata_only,lower extremity,MEL,722,112,0.0,False
+metadata_only,lower extremity,BCC,722,77,0.0,False
+metadata_only,lower extremity,SCC,722,22,0.40909090907231405,False
+metadata_only,oral/genital,MEL,9,2,0.0,True
+metadata_only,oral/genital,BCC,9,0,,True
+metadata_only,oral/genital,SCC,9,0,,True
+metadata_only,palms/soles,MEL,58,30,0.5666666666477778,False
+metadata_only,palms/soles,BCC,58,0,,True
+metadata_only,palms/soles,SCC,58,1,0.0,True
+metadata_only,posterior torso,MEL,437,66,0.65151515150528,False
+metadata_only,posterior torso,BCC,437,27,0.07407407407133058,False
+metadata_only,posterior torso,SCC,437,4,0.0,True
+metadata_only,upper extremity,MEL,470,105,0.009523809523718821,False
+metadata_only,upper extremity,BCC,470,61,0.0,False
+metadata_only,upper extremity,SCC,470,14,0.9999999999285715,False
+fusion,anterior torso,MEL,1060,221,0.7420814479604431,False
+fusion,anterior torso,BCC,1060,159,0.8805031446485504,False
+fusion,anterior torso,SCC,1060,21,0.7142857142517007,False
+fusion,head/neck,MEL,675,121,0.6776859504076224,False
+fusion,head/neck,BCC,675,165,0.8484848484797062,False
+fusion,head/neck,SCC,675,31,0.5161290322414152,False
+fusion,lateral torso,MEL,7,2,0.9999999995,True
+fusion,lateral torso,BCC,7,0,,True
+fusion,lateral torso,SCC,7,0,,True
+fusion,lower extremity,MEL,722,112,0.7767857142787786,False
+fusion,lower extremity,BCC,722,77,0.883116883105414,False
+fusion,lower extremity,SCC,722,22,0.8181818181446281,False
+fusion,oral/genital,MEL,9,2,0.9999999995,True
+fusion,oral/genital,BCC,9,0,,True
+fusion,oral/genital,SCC,9,0,,True
+fusion,palms/soles,MEL,58,30,0.8333333333055556,False
+fusion,palms/soles,BCC,58,0,,True
+fusion,palms/soles,SCC,58,1,0.9999999989999999,True
+fusion,posterior torso,MEL,437,66,0.6666666666565656,False
+fusion,posterior torso,BCC,437,27,0.9259259258916324,False
+fusion,posterior torso,SCC,437,4,0.2499999999375,True
+fusion,upper extremity,MEL,470,105,0.695238095231474,False
+fusion,upper extremity,BCC,470,61,0.86885245900215,False
+fusion,upper extremity,SCC,470,14,0.49999999996428574,False

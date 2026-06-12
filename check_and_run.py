@@ -1,0 +1,1 @@
+import torch; sd=torch.load('outputs/models/fusion_best.pth',map_location='cpu'); print(len(sd), 'layers OK')

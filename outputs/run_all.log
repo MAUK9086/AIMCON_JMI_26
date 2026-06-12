@@ -1,0 +1,4 @@
+============================================
+AIMCON_JMI_26 — Full Experiment Pipeline
+============================================
+experiments/run_all.sh: line 15: python: command not found

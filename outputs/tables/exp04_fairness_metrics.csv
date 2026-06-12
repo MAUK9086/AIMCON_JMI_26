@@ -1,0 +1,10 @@
+model,class,equalized_odds_gap,demographic_parity_gap,group_sensitivities
+image_only,MEL,0.07852564102805903,0.07852564102405257,"{'indian_profile': 0.7291666666590711, 'western_profile': 0.8076923076871302}"
+image_only,BCC,0.08411214945036094,0.08411214953192414,"{'indian_profile': 0.9999999999090909, 'western_profile': 0.91588785045873}"
+image_only,SCC,0.161764705729455,0.16176470592063152,"{'indian_profile': 0.7499999998125, 'western_profile': 0.588235294083045}"
+metadata_only,MEL,0.2956730769213068,0.29567307691730027,"{'indian_profile': 0.03124999999967448, 'western_profile': 0.32692307692098127}"
+metadata_only,BCC,0.8317757009268059,0.8317757008452425,"{'indian_profile': 0.0, 'western_profile': 0.8317757009268059}"
+metadata_only,SCC,0.0,1.9117651905986577e-10,"{'indian_profile': 0.0, 'western_profile': 0.0}"
+fusion,MEL,0.09214743589955798,0.09214743589555152,"{'indian_profile': 0.6770833333262803, 'western_profile': 0.7692307692258383}"
+fusion,BCC,0.1605777400748104,0.1605777399932471,"{'indian_profile': 0.7272727272066115, 'western_profile': 0.8878504672814219}"
+fusion,SCC,0.411764705666955,0.4117647058581315,"{'indian_profile': 0.99999999975, 'western_profile': 0.588235294083045}"
