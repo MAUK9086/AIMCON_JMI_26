@@ -32,7 +32,7 @@ python data/download_isic2019.py
 bash experiments/run_all.sh
 ```
 
-Results are saved to `outputs/`.
+Results are saved to `outputs/`. Model checkpoints are not stored in git: the run trains them into `outputs/models/`, or you can download them from the repo's Releases page and place them there to skip retraining.
 
 ## Results
 

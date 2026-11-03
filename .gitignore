@@ -26,3 +26,6 @@ outputs/tables/
 # MLflow / TensorBoard
 mlruns/
 runs/
+
+# Model checkpoints (published as release assets, not in git)
+outputs/models/*.pth
