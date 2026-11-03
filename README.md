@@ -34,6 +34,28 @@ bash experiments/run_all.sh
 
 Results are saved to `outputs/`.
 
+## Results
+
+ISIC 2019, 8 classes, held-out test set (n = 3,801). Macro-averaged over classes.
+
+**Baselines (exp01)**
+
+| Model | Mean sensitivity | Macro F1 | Macro AUC |
+|---|---|---|---|
+| Image only | 0.774 | 0.748 | 0.967 |
+| Metadata only (age, sex, site) | 0.317 | 0.169 | 0.709 |
+| Image + metadata | 0.795 | 0.763 | 0.969 |
+
+**Occlusion test on the fusion model (exp02)**
+
+| Condition | Mean sensitivity | Macro F1 | Macro AUC |
+|---|---|---|---|
+| Nothing occluded | 0.795 | 0.763 | 0.969 |
+| Image occluded | 0.163 | 0.053 | 0.618 |
+| Metadata occluded | 0.784 | 0.780 | 0.969 |
+
+Removing the image collapses the fusion model; removing the metadata barely moves the aggregate numbers. Metadata alone is weak (macro AUC 0.71) but above chance, and metadata is clearly associated with the label (age vs malignancy, point-biserial r = 0.37). Per-class reliance, subgroup and fairness results (exp03–exp14) are in `outputs/tables/`.
+
 ## Repository Structure
 
 ```
